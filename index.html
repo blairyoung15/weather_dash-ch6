@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Git it Done</title>
+  <title>Weather Dashboard</title>
 </head>
 
 <body class="flex-column min-100-vh">
@@ -16,41 +16,54 @@
     <h1 class="app-title"><i class="dashboard"></i> Weather Dashboard</h1>
   </header>
 
-  <!-- city search -->
+  
   <main class="flex-row justify-space-between">
+    <!-- city search -->
     <div class="col-12 col-md-4">
       <div class="card">
         <h3 class="card-header text-uppercase">Search For a City:</h3>
         <form id="city-form" class="card-body">
           <label class="form-label" for="city">City</label>
           <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-          <button type="submit" class="btn">Search</button>
+          <button type="submit" class="btn" id="search-btn">Search</button>
         </form>
       </div>
 
  <!-- Store previous city searches -->
  <div class="card">
     <div id="city-buttons" class="card-body">
-      <button data-language="javascript" class="btn">previous city searched</button>
+      <button class="btn">previous city searched</button>
     </div>
   </div>
 </div> 
 
+<!-- today's forecast -->
 <div class="col-12 col-md-8">
     <div class="city-card">
-        <h3 class="city-card-header">City (Current Date)</h3>
-        <p>Temp:</p>
-        <p>Wind:</p>
-        <p>Humidity:</p>
-        <p>UV Index:</p>
+        <h3 class="city-card-header">City<span id="city-searched"></span> (Current Date)<span id="current-date"></span></span></h3>
+        <p>Temp:<span id="today-temp"></span></p>
+        <p>Wind:<span id="today-wind"></span></p>
+        <p>Humidity:<span id="today-humidity"></span></p>
+        <p>UV Index:<span id="today-uv"></span></p>
 
     </div>
 
 <!-- 5 day forecast container (create new elements with 5 day forecast?)-->
     <h3 class="subtitle">5 Day Forecast: <span id="repo-search-term"></span></h2>
     <div id="forecast-container" class="list-group">
+      <div class="row">
+      <div id="1day" class="col">1 day</div>
+      <div id="2day" class="col">2 day</div>
+      <div id="3day" class="col">3 day</div>
+      <div id="4day" class="col">4 day</div>
+      <div id="5day" class="col">5 day</div>
+    </div>
 
     </div>
   </div>
 </main>
-    
+  
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

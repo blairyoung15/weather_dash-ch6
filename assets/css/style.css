@@ -1,0 +1,10 @@
+.hero {
+    text-align: center;
+    color: #fff;
+    background-color: blue;
+    margin: 10px;
+}
+
+.btn {
+    width: 75%;
+}
