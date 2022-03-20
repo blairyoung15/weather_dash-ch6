@@ -1,10 +1,74 @@
+:root {
+    --main-color: rgb(48, 62, 143);
+    --secondary-color: rgb(47, 150, 163);
+    
+}
+*{
+    margin: 10px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
 .hero {
     text-align: center;
     color: #fff;
-    background-color: blue;
+    background: linear-gradient(70deg, var(--secondary-color), var(--main-color));
     margin: 10px;
 }
 
-.btn {
-    width: 75%;
+.search-card {
+    border-bottom: 2px solid rgb(73, 73, 73);
+}
+.card {
+    font-size: 40px;
+    border: none;
+}
+
+.card-body {
+    font-size: 30px;
+}
+
+.city-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(73, 73, 73);
+}
+
+
+.list-group {
+    background: #fff;
+}
+
+.city-card img {
+}
+
+
+.future {
+    background: var(--main-color);
+    color: #fff;
+    font-size: 75%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.future h3 {
+    font-size: 95%;
+}
+
+#city-buttons button {
+   width: 100%;
+   border: none;
+   margin: 10px 0;
+}
+
+@media screen (max-width: 730px) {
+    .
+    
 }
